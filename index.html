@@ -5,32 +5,77 @@
     <style>
         body {
             font-family: Arial;
-            background-color: #f4f4f4;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
             text-align: center;
         }
-        .box {
+        nav {
+            text-align: center;
+            background: #555;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
             background: white;
             padding: 20px;
-            margin: 50px auto;
-            width: 60%;
+            margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
-        }
-        h1 {
-            color: #333;
+            box-shadow: 0 0 10px gray;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="box">
-        <h1>Hello, I'm Poornima 👋</h1>
-        <p>First Year CSE Student</p>
-        <p>Learning Web Development 🚀</p>
+<header>
+    <h1>Poornima 👋</h1>
+    <p>First Year CSE Student | Web Developer</p>
+</header>
 
-        <h2>My Skills</h2>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate CSE student learning web development and building projects.</p>
+    </div>
+
+    <div class="card" id="skills">
+        <h2>Skills</h2>
         <p>HTML | CSS | JavaScript</p>
     </div>
+
+    <div class="card" id="projects">
+        <h2>Projects</h2>
+        <p>1. My First Website (this one!)</p>
+    </div>
+
+    <div class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Email: yourmail@gmail.com</p>
+    </div>
+
+</div>
 
 </body>
 </html>
